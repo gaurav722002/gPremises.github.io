@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPremises</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="icons8-home-50.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+        <!--nav bar for mobile-->
+    <div class="navmobile">
+        <div class="close"> <i class="fa fa-close"></i></div>
+        <a href="">Home</a>
+        <a href="">News</a>
+        <details><summary>Projects</summary>
+        <a href="">UPCOMING PROJECTS</a>
+        <a href="">ONGOING PROJECTS</a>
+        </details>
+        <a href="">Contact Us</a>
+        <details><summary>Explore Us</summary>
+            <a href="">ABOUT US</a>
+            <a href="">KEY MANAGEMENT</a>
+            </details>
+        <a href="">Social</a>
+    </div>
+<!--nav bar for mobile-->
+
+    <!--Navigation Bar Start-->
+    <div class="navbar">
+        <div class="logo" style="font-family: 'Lobster', cursive; color:white;">G-Premises</div>
+        <div class="sidenav"><i class="fa fa-bars" style="font-size: 50px;"></i></div>
+        <a href="">Home</a>
+        <a href="">News</a>
+        <div class="dropdown">
+            <a href="">Projects</a>
+            <div class="dropcontent">
+                <a href="">Upcoming Projects</a>
+                <a href="">Ongoing Projects</a>
+            </div>
+        </div>
+        <a href="">Contact Us</a>
+        <div class="dropdown">
+            <a href="">Explore Us</a>
+            <div class="dropcontent">
+                <a href="">About Us </a>
+                <a href="">Key Management Team</a>
+            </div>
+        </div>
+    <a href="">Social</a>
+    </div>
+<!--Navigation Bar End-->
+<!--Image Slider Animation Start-->
+    <div class="slider">
+        <div class="slides">
+            <div class="slide s1"><img src="Images/house2.jpeg" alt="Image 1"></div>
+            <div class="slide s2"><img src="Images/HOUSE1.jpg" alt="Image 2"></div>
+            <div class="slide s3"><img src="Images/image3.jpeg" alt="Image 3"></div>
+            <div class="slide s4"><img src="Images/house4.jpg" alt="Image 4"></div>
+            <div class="slide s5"><img src="Images/slider3.jpg" alt="Image 5"></div>
+        </div>
+        <div class="fadedslide">
+            <div class="matte m1"></div>
+            <div class="matte "></div>
+            <div class="matte"></div>
+            <div class="matte"></div>
+            <div class="matte"></div>
+        </div>
+        <div class="textslide">
+            <div class="animtext t1">
+                <h1>CUSTOM DESIGNS</h1>
+                <h2>MY DESIGN</h2>
+                <button>Details</button>
+            </div>
+            <div class="animtext t2">
+                <h1>SPACIOUS AREA</h1>
+                <h2>FLOOR PLAN</h2>
+                <button>Details</button>
+            </div>
+            <div class="animtext t3">
+                <h1>STRUCTURED SOCIETY</h1>
+                <h2>BROAD PARKINGS</h2>
+                <button>Details</button>
+            </div>
+            <div class="animtext t4">
+                <h1>UPCOMING SOCIETY</h1>
+                <h2>ADVANCE DESIGNS</h2>
+                <button>Details</button>
+            </div>
+            <div class="animtext t5">
+                <h1>YOUR PREMISE</h1>
+                <h2>TAKE YOUR KEYS</h2>
+                <button>Details</button>
+            </div>
+        </div>
+<!--Image Slider Animation End-->
+    </div>
+<!--Manual Button Start-->
+<div class="manual-btn">
+        <button class="prev btn"onclick="prev()">&#10216;</button>
+        <button class="next btn" onclick="next()">&#10217;</button>
+    </div>
+<!--Manual Button End-->
+<!--Upcoming Projects Start-->
+    <div class="upcoming">
+        <h1>UPCOMING PROJECTS</h1>
+        <div class="upcomprojects">
+            <div class="upslide u1">
+                <img src="Images/uppro1.jpg" alt="Image1 525px">
+                <div class="uptext">
+                    <h2>Mall Tower</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <button>SEE MORE </button>
+                </div>
+            </div>
+            <div class="upslide u2">
+                <img src="Images/uppro2.jpg" alt="Image2 525px">
+                <div class="uptext">
+                    <h2>Mall Tower</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <button>SEE MORE </button>
+                </div>
+            </div>
+            <div class="upslide u3">
+                <img src="Images/uprpo3.jpg" alt="Image3 525px">
+                <div class="uptext">
+                    <h2>Mall Tower</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <button>SEE MORE </button>
+                </div>
+            </div>
+            <div class="upslide u4">
+                <img src="Images/uppro4.jpg" alt="Image4 525px">
+                <div class="uptext">
+                    <h2>Mall Tower</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <button>SEE MORE </button>
+                </div>
+            </div>
+        </div>
+        <div class="btns">
+            <button class="btn2 b1" onclick="img1()" ></button> 
+            <button class="btn2 b2" onclick="img2()"></button> 
+            <button class="btn2 b3" onclick="img3()"></button> 
+        </div>    
+    </div>
+    
+       
+
+<!--Upcoming Projects End-->
+<!--Testimonials Start-->
+<div class="testimonials">
+    <div class="animcontainer">
+        <div class="fade2">aaa</div>
+        <div class="text">
+            <h1>TESTIMONIALS</h1>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque,
+             magnam harum aliquam necessitatibus similique incidunt odio facilis quibusdam 
+             enim commodi totam eveniet doloremque vitae corrupti error neque repellendus nulla,
+              eos placeat assumenda nostrum sint, facere voluptatem Eveniet vero voluptatem modi!</div>
+    </div>
+</div>
+<!--Tetsimonnials End-->
+<!--Ongoing Projects Start-->
+    <div class="ongoing">
+        <h1>ONGOING PROJECTS</h1>
+        <div class="ongproj">
+            <div class="onslide o1">
+                <img src="Images/oppro1.jpg" alt="Image1">
+                <div class="text">
+                    <h2>Top Town</h2>
+                    <p>Napier Town, Lorem</p>
+                    <button>READ MORE</button>
+                </div>
+            </div>
+            <div class="onslide o1">
+                <img src="Images/oppro2.jpg" alt="Image1">
+                <div class="text">
+                    <h2>Top Town</h2>
+                    <p>Napier Town, Lorem</p>
+                    <button>READ MORE</button>
+                </div>
+            </div>
+            <div class="onslide o1">
+                <img src="Images/oppro3.jpg" alt="Image1">
+                <div class="text">
+                    <h2>Top Town</h2>
+                    <p>Napier Town, Lorem</p>
+                    <button>READ MORE</button>
+                </div>
+            </div>
+            <div class="onslide o1">
+                <img src="Images/oppro4.jpg" alt="Image1">
+                <div class="text">
+                    <h2>Top Town</h2>
+                    <p>Napier Town, Lorem</p>
+                    <button>READ MORE</button>
+                </div>
+            </div>
+            <div class="onslide o1">
+                <img src="Images/oppro5.jpg" alt="Image1">
+                <div class="text">
+                    <h2>Top Town</h2>
+                    <p>Napier Town, Lorem</p>
+                    <button>READ MORE</button>
+                </div>
+            </div>
+            <div class="onslide o1">
+                <img src="Images/oppro6.jpg" alt="Image1">
+                <div class="text">
+                    <h2>Top Town</h2>
+                    <p>Napier Town, Lorem</p>
+                    <button>READ MORE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--Ongoing Projects End-->
+
+<!--Contact Bar Start-->
+<div class="endcon">
+    <img src="images/contatc.jpg" alt="">
+    <div class="fadeend"></div>
+    <div class="endabout">
+        <div class="log"><h2>LOGO</h2></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Nesciunt officia velit quia, molestiae nulla porro 
+                reiciendis blanditiis iure assumenda itaque ab aliquam 
+                quo veritatis nisi dicta, dolorum modi odio qui quis 
+                voluptas! Eaque eius vel natus quis mollitia porro corrupti!</p>
+        </div>
+    <div class="endcontact">
+        <h2 >Contact Us</h2>
+        <div class="contacttext">
+            <p><span><i class="fa fa-phone" style="font-size:30px;"></i> &nbsp; +89-8989-5656-25 </span></p> 
+         <p><span><i class="fa fa-envelope" style="font-size:30px;"></i> &nbsp; yourProperty07@gmail.com</span></p> 
+         <p><span><i class="fa fa-car" style="font-size:30px;"></i> &nbsp;Lorem ipsum dolor ,sit amet consectetur ,adipisicing.</span> </p> 
+        </div>
+    </div>
+    <div class="followus">
+        <p><h2>Follow Us</h2></p>
+        <p>
+            <i class="fa fa-facebook" style="font-size:30px;"></i>
+            <i class="fa fa-google" style="font-size:30px;"></i>
+            <i class="fa fa-instagram" style="font-size:30px;"></i>
+            <i class="fa fa-pinterest" style="font-size:30px;"></i>
+            <i class="fa fa-twitter" style="font-size:30px;"></i>
+        </p>
+    </div>
+</div>
+
+
+<!-- Contact Bar End -->
+
+
+<script src="index3.js"></script>
+
+</body>
+</html>

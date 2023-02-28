@@ -1,0 +1,612 @@
+*{
+    text-decoration: none;
+}
+body{
+    margin: 0;
+    width: 100%;
+    font-family: 'Libre Baskerville', serif;
+}
+ /*Mobile  NavBar start*/
+ .navmobile{
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: -120%;
+    z-index: 2;
+    height: 650px;
+    font-size: 25px;
+    text-align: center;
+    opacity: 0.9;
+    transition: 1.5s;
+    transform: scale(0);
+}
+.navmobile a{
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 136, 0);
+}
+.navmobile details{
+    color: rgb(255, 149, 0);
+    display: block;
+}
+.navmobile a,details{
+    line-height: 2cm;
+}
+.navmobile .close{
+    display: inline;
+    padding: 10px;
+    float: right;
+    color: orange;
+    font-size: larger;
+    font-family: sans-serif;
+}
+/*Mobile  NavBar start*/
+.logo{
+    text-align: left;
+    font-size: 30px;
+}
+.sidenav{
+    position: absolute;
+    top: 40px;
+    right: 0;
+    display: none;
+}
+.navbar{
+    background-image: url('Images/nabar.jpg');
+    background-size: cover;
+    border-bottom: 0;
+    text-align: right;
+    font-size: 20px;
+    width: 100%;
+    height: 212px;
+    top: 0;
+    position: relative;
+    padding: 20px 0;
+}
+.navbar a{
+    color: white;
+    padding: 20px 20px;
+}
+.navbar a:hover{
+    border-radius: 10%;
+    background-color: rgb(140, 139, 139);
+}
+/*Resposive navbar*/
+@media(max-width:1000px){
+    .navbar{
+    font-size: medium; 
+    }
+    .logo{
+        font-size: 25px;
+    }
+}
+@media(max-width:840px){
+    .navbar{
+        text-align: center;
+    }
+    .logo{
+        text-align: center;
+        padding-bottom: 6px;
+    }
+}
+@media(max-width:980px){
+    .navbar a{
+        display: none;
+    }
+    .sidenav{
+        display: inline;
+    }
+}
+
+
+
+
+/*Responsive navbar*/
+.dropdown{
+    display: inline-block;
+    position: relative;
+}
+.dropcontent {
+    border: 1px solid black;
+    background-color: rgb(255, 132, 0);
+    position: absolute;
+    width: 230px;
+    top: 43px;
+    right: -20px;
+    text-align: left;
+    border-radius: 10%;
+    transition: 0.7s;
+    z-index: 1;
+    transform: scale(0);
+    }
+.dropcontent a{
+    font-size: large;
+    display: block;
+}
+.dropdown:hover  .dropcontent{
+    transform: scale(1);
+}
+/**Main SLider**/
+.slider{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+.slides{
+    display: flex;
+    width: 500%;
+    height: 600px;
+}
+.slide{
+    width: 20%;
+    height: 600px;
+}
+.fadedslide{
+    position: absolute;
+    top: 0;
+    width: 500%;
+    display: flex;
+    height: 600px;
+}
+.matte{
+    width: 20%;
+    height: 600px;
+    background-color: rgb(26, 26, 26);
+    opacity: 0.7;
+    text-align: center;
+}
+.textslide{
+    position: absolute;
+    top: 50%;
+    width: 500%;
+    height: 100px;
+    display: flex;
+}
+.textslide .animtext{
+    text-align: center;
+    width: 20%;
+    height: 300px;
+}
+.animtext h1{
+    color: white;
+}
+.animtext h2{
+    color: orange;
+    font-size: 40px;
+}
+.animtext button{
+    padding: 10px;
+    border-radius: 25%;
+    font-size: larger;
+    color: white;
+    background-color: rgb(227, 148, 1);
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+.animtext{
+    animation-name: textanim;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+/*Animation of the text*/
+@keyframes textanim{
+    0%{
+        transform: translateY(20%);
+    }
+    100%{
+        transform: translateY(-60%);
+    }
+}
+/*Animation text end*/
+.slide img{
+    width: 100%;
+    height: 600px;
+}
+.btn{
+background-color: gainsboro;
+font-size: larger;
+width: 50px;
+height: 100px;
+cursor: pointer;
+position: absolute;
+opacity: 0.7;
+border: none;
+border-radius: 10%;
+
+}
+.prev{
+left: 0px;
+top: 50%;
+}
+.next{
+right: 0px;
+top: 50%;
+}
+/**Main SLider End**/
+/**Upcoming Project Slide**/ 
+.upcoming{
+position: relative;
+top: 200px;
+margin: auto;
+padding-top: 40px;
+padding: 0px auto 0px auto;
+/* box-shadow: 0px 0px 10px grey; */
+height: auto;
+overflow: hidden;
+}
+.upcoming h1{
+color: black;
+text-align: center;
+font-weight: 800;
+}
+.upcomprojects{
+margin: auto;
+display: flex;
+width: 2400px;
+overflow-x: hidden;
+}
+.upslide{
+width: 25%;
+transition:1s;
+}
+.upslide img{
+border-radius: 10%;
+width: 90%;
+height: auto;
+}
+.btns{
+display: inline;
+position: absolute;
+bottom: 0;
+left: 50%;
+}
+.uptext{
+padding: 10px;
+line-height: 0.5rem;
+}
+.uptext h2{
+font-size: 30px;
+}
+.uptext button{
+border: 0;
+outline: 0;
+padding: 10px;
+background-color: orange;
+}
+.btn2{
+border: 0;
+outline: 0;
+border-radius: 10%;
+width: 10px;
+border-radius: 50%;
+height: 10px;
+cursor: pointer;
+background-color: grey;
+}
+/**Upcoming Project Slide End**/ 
+@media(max-width:490px){
+    .upcoming{
+        width: 100%;
+    }
+}
+/*Upcoming responsive function*/
+@media(max-width:543px){
+    .upslide img{
+        width: 70%;
+    }  
+}
+/*Upcoming responsive function*/
+/*Testimonials Start*/
+.testimonials{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    top: 300px;
+}
+.animcontainer{
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    margin: auto;
+    /* box-shadow: 0px 0px 10px grey; */
+    animation-name: imageanim;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;    
+}
+.animcontainer .fade2{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: 5%;
+    opacity: 0.5;
+}
+@keyframes imageanim{
+    0%{
+        background-image: url('Images/anim1.jpg');
+        background-size: cover;
+    }
+    25%{
+        background-image: url('Images/anim.jpg');
+        background-size: cover;
+    }
+    50%{
+        background-image: url('Images/anim3.jpg');
+        background-size: cover;
+    }
+    100%{
+        background-image: url('Images/anim4.jpg');
+        background-size: cover;
+    }
+}
+.animcontainer .text h1{
+    text-align: center;
+}
+.animcontainer .text{
+    font-size: 20px;
+    line-height: 1cm;
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 90%;
+    height: auto;
+}
+/*Testimonials End*/
+/*Responsive testimonials*/
+@media(max-width:489px){
+    .testimonials .text{
+        font-size: small;
+    }
+}
+/*Responsive testimonials*/
+/*Ongoing Projects Start */
+.ongoing{
+    position: relative;
+    top: 500px;
+width: 100%;
+}
+.ongoing h1{
+color: black;
+text-align: center;
+}
+.ongproj{
+width: 100%;
+display: grid;
+margin: auto;
+grid-template-columns:repeat(auto-fill, minmax(300px , 1fr));
+grid-gap: 10px;
+}
+.onslide{
+display: inline-block;
+width: 100%;
+/* box-shadow: 0px 3px 6px grey; */
+border-radius: 5%;
+padding-bottom: 20px;
+}
+.onslide:hover{
+background-color: rgb(242, 241, 241);
+}
+
+.onslide img{
+width: 100%;
+height: 300px;
+border-radius: 5% 5% 0 0;
+transform: scale(0.95);
+transition: 0.6s;
+}
+.onslide:hover img{
+transform: scale(0.99);
+}
+.text{
+padding-top: 10px;
+padding-left: 20px;
+line-height: 0.9rem;
+}
+.text h2{
+font-size: 30px;
+}
+.text p{
+font-size: medium;
+}
+.text button{
+border: 0;
+border-radius: 7%;
+outline: 0;
+background-color: orange;
+color: white;
+padding: 10px;
+transition: 0.7s;
+}
+.text button:hover{
+background-color: grey;
+}
+/*Ongoing Projects End */
+/*END BAR START*/
+.endcon{
+margin-top: 200px;
+color: white;
+height: auto;
+border: 1px solid black;
+padding: 70px 20px;
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(300px , 1fr));
+grid-gap: 30px;
+position: relative;
+top: 400px;
+}
+.endcon img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+.endcon .fadeend{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+}
+.endcontact{
+text-align: left;
+padding: 0px 20px;
+z-index: 1;
+}
+.endcontact i {
+    cursor: pointer;
+    color: orange;
+}
+.endabout{
+    z-index: 1;
+}
+.followus{
+text-align: center;
+line-height: 1cm;
+z-index: 1;
+}
+.followus i{
+    color: orange;
+    cursor: pointer;
+    word-spacing: 1cm;
+}
+.followus p{
+word-spacing: 1cm;
+z-index: 1;
+}
+/*END BAR END*/
+/*responsive body*/
+@media(max-width:420px){
+    body{
+        width: 100%;
+        height: auto;
+    }
+    .manual-btn{
+        text-align: center;
+    }
+    .btn{
+        top: -100%;
+        height: 50px;
+        border: 1px solid orange;
+    }
+    .next{
+        position: relative;
+    }
+    .prev{
+        position: relative;
+    }
+    }
+
+@media(max-width:500px){
+    body{
+        width: 100%;
+        height: auto;
+    }
+    .upcoming h1{
+        color: orange;
+        text-align: center;
+        font-size: 22px;
+    }
+    .upslide{
+        height: auto;
+    }
+    .upslide img{
+        width: 80%;
+        height: auto;
+    }
+    .upslide .uptext{
+        padding: 0;
+        width: 100%;
+        height: auto;
+    }
+    .upslide .uptext h2{
+        font-size: 17px;
+    }
+        .ongoing h1{
+            font-size: 20px;
+            width: 100%;
+            height: auto;
+            line-break: anywhere;
+            color: orange;
+            text-align: center;
+        }
+       .ongproj{
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0;
+        }
+        .ongproj img{
+            width: 100%;
+            height: 200px;
+        }
+        .ongproj .onslide h2{
+            font-size: 20px;
+        }
+        .endcon{
+            padding: 0;
+            grid-gap: 0;
+        }
+        .endcon .endabout{
+            width: 70%;
+            height: auto; 
+            font-size: 12px;
+        }
+        .endcon .endcontact{
+            width: 70%;
+            height: auto;
+            padding: 0;
+        }
+        .endcon .followus{
+            width: 50%;
+           
+        }
+        .endcon .followus i{
+            display: block;
+            padding: 10px;
+        }
+        .textslide{
+            position: absolute;
+            top: 50%;
+            width: 500%;
+            height: auto;
+            display: flex;
+        }
+        .textslide .animtext{
+            text-align: center;
+            width: 20%;
+            height: 300px;
+        }
+        .animtext h1{
+            font-size: 20px;
+            color: white;
+        }
+        .animtext h2{
+            color: orange;
+            font-size: 25px;
+        }
+        .animtext button{
+            padding: 10px;
+            border-radius: 25%;
+            font-size: larger;
+            color: white;
+            background-color: rgb(227, 148, 1);
+            border: 0;
+            outline: 0;
+            cursor: pointer;
+        }
+        .sidenav{
+            position: absolute;
+            font-size: 10px;
+        }
+        .animcontainer .text{
+            width: 50%;
+            height: auto;
+            line-height: 0.5cm;
+        }
+        .animcontainer .text h1{
+            font-size: 20px; 
+        }
+    }
+    /*responsive body*/
